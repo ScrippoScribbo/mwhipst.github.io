@@ -81,11 +81,15 @@ header, footer {
 
 @font-face {
   font-family: 'Montserrat';
-  src: url(".../school-site/fonts/montserrat-regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+  src: url("../school-site/fonts/montserrat-regular.ttf") format('truetype');
 }
 @font-face {
   font-family: 'Josefinslab';
-  src: url(".../school-site/fonts/josefinslab-regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+  src: url(".../school-site/fonts/josefinslab-regular.ttf") format('truetype');
 }
 
 /* Typography Styles */
@@ -156,14 +160,36 @@ ol {
 
 /* Navigation Menu */
 
+nav {
+	padding-left:0;
+	margin-top:0.25rem;
+}
+nav a {
+	text-decoration:none;
+	display:inline-block;
+	width:100%;
+	line-height:3;
+	text-align:center;
+	font-size:1.125rem;
+	margin-bottom:1.5rem;
+	color:#33658A;
+}
 
-
-
-
+nav a:focus,
+nav a:hover {
+	color:#FFF;
+	background-color:#33658A;
+}
+nav a:active {
+	color:#FFF;
+	background-color:#000;
+}
 
 /* Footer Styles */
 
-
+footer {
+	text-align:center;
+}
 
 
 
