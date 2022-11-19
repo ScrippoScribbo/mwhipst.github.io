@@ -79,15 +79,50 @@ header, footer {
 
 /* Imported Typfaces */
 
-
-
-
+@font-face {
+  font-family: 'Montserrat';
+  src: url("school-site/fonts/montserrat-regular.ttf");
+}
+@font-face {
+  font-family: 'Josefinslab';
+  src: url("school-site/fonts/josefinslab-regular.ttf");
+}
 
 /* Typography Styles */
 
-
-
-
+html {
+	font-family:'Montserrat', sans-serif;
+}
+h1 {
+	font-family:'Josefinslab', sans-serif;
+	letter-spacing:0.125rem;
+	font-size:3.75rem;
+	margin:1.125rem;
+	text-align:center;
+}
+h2 {
+	font-size:1.5rem;	
+}
+h2 + p {
+	font-size:0.75rem;
+	word-spacing:0.125rem;
+	letter-spacing:0.031rem;
+	text-indent:1.5rem;
+}
+p {
+	font-size:0.75rem;
+	word-spacing:0.125rem;
+	letter-spacing:0.031rem;
+}
+li {
+	font-size:0.75rem;
+	word-spacing:0.125rem;
+	letter-spacing:0.031rem;
+}
+figcaption {
+	font-size:0.75rem;
+	margin-bottom:2rem;
+}
 
 
 /* Link Styling */
