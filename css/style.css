@@ -26,31 +26,32 @@ html {
     padding: 0;
     font-size: 16px;
     background-color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
     max-width:1200px;
     margin:0 auto;
     padding:1rem 2rem;    
-    color:#111;
-    font-family: 'Cabin', sans-serif;
-       
+    color:#111;       
 } 
 
 header {
     border-bottom: .0625rem solid #333;
     margin-bottom:4rem;
     padding-bottom:2rem;
-  
+	letter-spacing:0.125rem;
+    font-family: 'Josefinslab', sans-serif;
 }
  
 h1 {
-    font-size: 6rem;
+    font-size:3.75rem;
     font-weight:100;
     color: #333;
     font-family: Lato, sans-serif;
-    text-shadow:2px 2px 3px #333;      
-    margin:0;
+    text-shadow:2px 2px 3px #333;    
+	text-align:center;
+    margin:1.125rem;
 }
 
 h1 span {
@@ -58,12 +59,10 @@ h1 span {
 }
 
 h2 {
-    
-    font-size:2rem;
+    font-size:1.5rem;
     margin-top:0;
     font-weight:100;
     font-family:'Lato', sans-serif;
-    
 }
 
 p, li {
