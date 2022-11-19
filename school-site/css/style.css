@@ -89,7 +89,7 @@ header, footer {
   font-family: 'Josefinslab';
   font-weight: normal;
   font-style: normal;
-  src: url(".../school-site/fonts/josefinslab-regular.ttf") format('truetype');
+  src: url("../school-site/fonts/josefinslab-regular.ttf") format('truetype');
 }
 
 /* Typography Styles */
@@ -131,10 +131,19 @@ figcaption {
 
 /* Link Styling */
 
+a {
+	text-decoration:none;
+}
 
+a:link,
+a:visited {
+	color:#33658A;
+}
 
-
-
+a:focus,
+a:hover {
+	text-decoration:none;
+}
 
 /* List Styling */
 
