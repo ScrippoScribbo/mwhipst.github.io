@@ -47,34 +47,75 @@
 
 
 /* ------ START WRITING YOUR CODE BELOW ------ */
+
+@font-face {
+    font-family:Lato;
+	src: url(fonts/lato-regular.ttf);
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+    font-family:Montserrat;
+	src: url(fonts/montserrat-regular.ttf);
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+    font-family:Open Sans;
+	src: url(fonts/opensans-regular.ttf);
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+    font-family:Roboto;
+	src: url(fonts/roboto-regular.ttf);
+    font-style:normal;
+    font-weight:normal;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
 body {
 	overflow-x: hidden;
+	line-height: 1.5;
 }
 
 h1 {
+	font-family:Lato;
 	font-size: 60px;
 	text-shadow: 2px 2px 2px #323232;
 	text-align: center;
 	transform: rotate(-4deg);
-	margin-bottom: 70px;
+	margin-bottom: 80px;
+	margin-top:45px;
 }
 #title {
+	font-family:Lato;
 	padding: 5px;
 	background-color: #83344D;
 	color: #EEEEDD;
 	border-radius: 5px;
+	box-shadow: 2px 2px 2px #323232;
 }
 
 h2 {
-	padding-left:50px;
+	padding-left:80px;
 	padding-top:20px;
+}
+h3 {
+	margin-top:5px;
+	margin-bottom:5px;
 }
 
 nav {
 	width: 100%;
 	padding-bottom: 30px;
 	padding-top: 30px;
-	padding-left: 50px;
+	padding-left: 80px;
 	margin-top: 30px;
 	margin-bottom: 30px;
 	word-spacing: 70px;
@@ -86,11 +127,11 @@ nav {
 .main-section {
 	display: flex;
 	flex-direction: row;
-	margin: 5px 50px;
+	margin: 5px 80px;
 }
 .article-image {
 	float: left;
-	margin: 10px 10px 0px 0px;
+	margin: 10px 20px 0px 0px;
 }
 .article-image img {
 	width: 280px;
@@ -100,20 +141,27 @@ nav {
 .subsection {
 	display:flex;
 	flex-direction:row;
-
 }
 .subsection img {
-	height: 230px;
-	width: 200px;
+	vertical-align: top;
+	height: 400px;
+	width: 300px;
+	margin-right:10px;
+	margin-top:50px;
+}
+figcaption {
+	background-color: #EEEEDD;
+    text-align: center;
+	max-width:300px;
+	margin-bottom:50px;
 }
 
 .right {	
-	width: 70%;
+	width: 80%;
     border-left: 2px solid black;
 	display: flex;
 	flex-direction: column;
-	padding: 0px 100px;
-	height: 500px;
+	padding-left: 30px;
 }
 
 .expand {
@@ -123,6 +171,15 @@ nav {
 }
 
 .right img {
-	height: 230px;
-	width: 200px;
+	background-color: #EEEEDD;
+}
+
+button {
+	padding: 5px;
+	font-size:50px;
+	background-color: #27476E;
+	color: #EEEEDD;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px #323232;
 }
