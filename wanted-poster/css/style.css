@@ -62,21 +62,29 @@ h1 {
     color:darkred;   text-shadow:.09375rem .09375rem .09375rem #000;
     font-family:'Alfa Slab One', Garamond, serif;
     text-align:center;
+	font-weight:bold;
 }
 
 h2 {
+    font-family:'Alfa Slab One', Garamond, serif;
+    color:darkred;   text-shadow:.09375rem .09375rem .09375rem #000;
 	font-size:3rem;
+	margin: 0;
 	font-weight:normal;
 	letter-spacing:0.25rem;
 	text-align:center;
+    text-transform: uppercase;
 }
 
 h3 {
+    font-family:'Alfa Slab One', Garamond, serif;
 	font-size:2rem;
 	font-weight:normal;
 	text-shadow:none;
 	color:#000;
+	margin: 0;
 	text-align:center;
+    text-transform: uppercase;
 }
 
 h4 {
@@ -84,7 +92,11 @@ h4 {
 	letter-spacing:0.25rem;
 	padding-bottom:1.125rem;
 	font-weight:normal;
+    font-family:'Alfa Slab One', Garamond, serif;
+    color:darkred;   text-shadow:.09375rem .09375rem .09375rem #000;
+	margin: 0;
 	text-align:center;
+    text-transform: uppercase;
 }
 
 h5 {
