@@ -50,32 +50,39 @@
 
 @font-face {
     font-family:Lato;
-	src: url(fonts/lato-regular.ttf);
+	src: url(../fonts/sans-serif/lato-regular.ttf);
     font-style:normal;
     font-weight:normal;
 }
 @font-face {
     font-family:Montserrat;
-	src: url(fonts/montserrat-regular.ttf);
+	src: url(../fonts/sans-serif/montserrat-regular.ttf);
     font-style:normal;
     font-weight:normal;
 }
 @font-face {
     font-family:Open Sans;
-	src: url(fonts/opensans-regular.ttf);
+	src: url(../fonts/sans-serif/opensans-regular.ttf);
     font-style:normal;
     font-weight:normal;
 }
 @font-face {
     font-family:Roboto;
-	src: url(fonts/roboto-regular.ttf);
+	src: url(../fonts/sans-serif/roboto-regular.ttf);
     font-style:normal;
     font-weight:normal;
+}
+@font-face {   
+    font-family:Ultra;
+    src: url(../fonts/serif/ultra-regular.ttf);
+    font-weight: normal;
+    font-style: normal; 
 }
 
 * {
 	padding: 0;
 	margin: 0;
+	font-family: Roboto, sans-serif;
 	box-sizing: border-box;
 }
 
@@ -85,16 +92,17 @@ body {
 }
 
 h1 {
-	font-family:Lato;
-	font-size: 60px;
+	font-family:Roboto, serif;
+	font-size: 3.8rem;
 	text-shadow: 2px 2px 2px #323232;
 	text-align: center;
 	transform: rotate(-4deg);
-	margin-bottom: 80px;
-	margin-top:45px;
+	margin-bottom: 4rem;
+	margin-top: 2.5rem;
 }
 #title {
-	font-family:Lato;
+	font-family:Ultra;
+	font-weight: normal;
 	padding: 5px;
 	background-color: #83344D;
 	color: #EEEEDD;
@@ -161,13 +169,24 @@ figcaption {
     border-left: 2px solid black;
 	display: flex;
 	flex-direction: column;
-	padding-left: 30px;
+	clear: left;
+	margin-left: 3%;
+	padding-left: 3%;
+}
+
+.right :nth-child(1) { 
+    margin-top: 0;
+}
+.right p {
+    font-size:.75rem;
+    padding-bottom:2rem;
 }
 
 .expand {
 	font-size: 25%;
+	display: block;
 	padding-bottom: 30px;
-    border-bottom: 2px solid black;
+    border-bottom: 0.1rem solid black;
 }
 
 .right img {
@@ -175,11 +194,28 @@ figcaption {
 }
 
 button {
-	padding: 5px;
-	font-size:50px;
+	margin-top: 1rem;
+	padding: 1rem;
+	font-size: 1.5rem;
+	font-family: Ultra;
 	background-color: #27476E;
 	color: #EEEEDD;
 	border: none;
 	border-radius: 5px;
 	box-shadow: 2px 2px 2px #323232;
+}
+
+footer {
+    margin:6rem auto .5rem auto;
+    width:90%;
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2%;
+}
+footer :nth-child(2) {
+    text-align: right;
+}
+footer a {
+    font-family: ubuntu, serif;
+    color:#6F7D77;
 }
